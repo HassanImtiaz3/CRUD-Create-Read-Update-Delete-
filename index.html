@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CRUD!</title>
+  </head>
+  <body>
+
+    <!-- animation introduction -->
+    <section>
+      <div class="container mt-4">
+        <div align="center">
+          <div class="waviy">
+            <!-- <span style="--i:1">CRUD(Create Read Update Delete) Operation </span> -->
+            <span style="--i:5">CRUD</span>
+            <span style="--i:5">(Create</span>
+            <span style="--i:6">Read</span>
+            <span style="--i:7">Update</span>
+            <span style="--i:8">Delete)</span>
+            <span style="--i:5"> </span>
+            <span style="--i:6">Operation</span>
+            <span style="--i:7"> &&</span>
+            <span style="--i:8">API's</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- form data section -->
+    <section>
+      <div class="container mt-5">
+        <div class="row g-3">
+          <div class="col">
+            <label style="color: white" for="inputEmail4" class="form-label">User ID</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="User Id"
+              aria-label="User Id"
+              id="userid"
+            />
+          </div>
+          <div class="col-md-6">
+            <label style="color: white" for="inputEmail4" class="form-label">IT Number</label>
+            <input
+              type="number"
+              class="form-control"
+              placeholder="IT Number"
+              aria-label="IT Number"
+              id="itnumber"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label style="color: white" for="inputEmail" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Enter Your Title"
+              id="title"
+              maxlength="10";
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label style="color: white" for="inputAddress" class="form-label">Message</label>
+            <input
+              type="text"
+              class="form-control"
+              id="msg"
+              placeholder="Type here"
+              maxlength="50";
+            />
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div align="center">
+            <button
+              type="submit"
+              class="btn btn-success"
+              onclick="onSubmitForm()"
+            >
+              Submit
+            </button>
+            <button
+              type="reset"
+              class="btn btn-warning"
+              style="color: rgb(253, 253, 253)"
+              onclick="onResetForm()"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- table formation section -->
+    <section>
+            <div class="container mt-5" style="overflow-x:auto;">
+              <div class="container-fluid" style="overflow-x: auto;">
+                    <table class="table table-responsive" id="storelist" style="text-align:center;" >
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">Button</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+            </div>
+        </section>
+
+    
+  
+
+
+
+
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

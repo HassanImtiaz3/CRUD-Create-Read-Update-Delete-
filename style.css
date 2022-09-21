@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    /* background-image: url("leaves.gif"); */
+    background-color: black;
+   background-position: center;
+}
+
+th{
+   font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+#storelist{
+  border: 2px solid white; 
+  color: white;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86));
+  border: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 30px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+  
+}
+
+
+/* mobile css */
+
+@media only screen and (max-width: 600px) 
+{
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    .waviy {
+      position: relative;
+      -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+      font-size: 16px;
+    }
+    .waviy span {
+      font-family: 'Alfa Slab One', cursive;
+      position: relative;
+      display: inline-block;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: waviy 1s infinite;
+      animation-delay: calc(.1s * var(--i));
+      
+    }
+    @keyframes waviy {
+      0%,40%,100% {
+        transform: translateY(0)
+      }
+      20% {
+        transform: translateY(-20px)
+      }
+    }
+
+    #storelist{
+      border: 2px solid black; 
+      color: white;
+      position: relative;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.86));
+      border: 2px solid white;
+      border: none;
+      right: 9.5px;
+  
+   
+      
+    }
+
+    body{
+      background:  url("computers.gif");
+      background-position: center;
+
+  }
+    
+}
+
